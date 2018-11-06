@@ -1,0 +1,179 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Layout
+# Clearing
+# Lists
+# Media
+# Links
+# Header
+# Content
+# Toggle Switch
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+.ect-main  {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ect-main *,
+.ect-main *:before,
+.ect-main *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*--------------------------------------------------------------
+# Clearing
+--------------------------------------------------------------*/
+
+.ect-main .clear:before,
+.ect-main .clear:after {
+  content: "";
+  display: table;
+}
+
+.ect-main .clear:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.ect-main .module-title {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.ect-main .module-header {
+	background-color: #f3f3f3;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 11px 18px;
+	position: relative;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: space-between;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+ }
+
+.module-container .catch-modules {
+    border: 1px solid #dfdfdf;
+}
+
+.module-container .module-wrap {
+    display: inline;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.module-content {
+    padding: 11px 18px;
+}
+
+/*--------------------------------------------------------------
+# Toggle Switch
+--------------------------------------------------------------*/
+
+.ect-main .switch {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  float: none;
+  right: 0;
+  top: 2px;
+}
+
+.ect-main .module-title.active {
+  background-color: #0085c3;
+}
+
+.ect-main .switch label {
+  background-color: #48a348;
+  border-radius: 11px;
+  cursor: pointer;
+  height: 16px;
+  right:0;
+  position: absolute;
+  top: 3px;
+  width: 30px;
+}
+
+.ect-main .inactive .switch label {
+  background-color: #ccc;
+}
+
+.ect-main .switch input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.ect-main .switch label:after {
+  background-color: #fff;
+  border-radius: 100%;
+  content: '';
+  height: 12px;
+  left: 2px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  top: 2px;
+  width: 12px;
+}
+
+.ect-main .switch input[type="checkbox"]:checked + label:after {
+  left: 16px;
+  background-color: #fff;
+}
+
+.ect-main .loader {
+  border: 5px solid #48a348;
+  border-radius: 50%;
+  border-top: 2px solid transparent;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  right: 60px;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

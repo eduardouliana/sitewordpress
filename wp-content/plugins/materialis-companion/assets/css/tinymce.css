@@ -1,0 +1,74 @@
+
+div.cp-tinymce-inline.mce-tinymce-inline {
+    width: 588px !important;
+}
+
+.mce-flow-layout-item {
+    margin-top: 1px !important;
+}
+
+.mce-btn button {
+    /*     padding: 4px 8px !important; */
+    font-size: 14px !important;
+    line-height: 20px !important;
+    cursor: pointer !important;
+    color: #333 !important;
+    text-align: center !important;
+    overflow: visible !important;
+    -webkit-appearance: none !important;
+    margin-bottom: 0px !important;
+    min-width: 0 !important;
+    border: none !important;
+}
+
+.mce-listbox button {
+    /*     padding-right: 0px !important; */
+}
+
+.mce-btn .mce-caret {
+    /* margin-top: 8px !important; */
+    /* margin-left: 10px !important; */
+}
+
+.mce-tinymce-inline {
+    transition: none !important;
+    /*max-width: 600px !important;*/
+    /*width: 550px !important;*/
+}
+
+.mce-tinymce-inline button, .mce-tinymce-inline .button {
+    background-color: transparent !important;
+    min-width: 0px !important;
+    line-height: 18px !important;
+    letter-spacing: 0px !important;
+}
+
+.mce-tinymce-inline * {
+    transition: none !important;
+}
+
+.mce-tinymce-inline .mce-container {
+    /* max-width: 100% !important; */
+}
+
+.mce-tinymce-inline .mce-container-body {
+    /* max-width: 100% !important; */
+    width: auto !important;
+}
+
+.mce-btn .mce-txt {
+    vertical-align: middle !important;
+    line-height: 100%;
+}
+
+.mce-colorbutton [role="presentation"] {
+    /*     padding-right: 0px !important; */
+}
+
+.mce-colorbutton [role="presentation"] + button {
+    /*     padding-left: 0px !important; */
+}
+
+.mce-colorbutton [role="presentation"] + button .mce-caret {
+    /*     margin-left: 0px !important; */
+}

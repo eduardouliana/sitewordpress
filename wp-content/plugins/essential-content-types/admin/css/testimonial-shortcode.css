@@ -1,0 +1,254 @@
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Element
+--------------------------------------------------------------*/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/*--------------------------------------------------------------
+# Padding/Margin
+--------------------------------------------------------------*/
+
+.ect-testimonial-content-section .section-content-wrapper {
+    padding-bottom: 35px;
+}
+
+.ect-testimonial-content-section .hentry {
+    padding: 0 30px 35px;
+}
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.entry-content:before,
+.entry-content:after,
+.entry-summary:before,
+.entry-summary:after {
+    content: "";
+    display: table;
+}
+
+.entry-content:after,
+.entry-summary:after {
+    clear: both;
+}
+
+/*--------------------------------------------------------------
+# Posts and pages
+--------------------------------------------------------------*/
+
+.ect-testimonial-content-section .hentry {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+
+.section {
+    clear: both;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-heading-wrapper {
+    display: block;
+}
+
+.section-heading-wrapper,
+.ect-testimonial-content-section .section-content-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1025px;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/   
+
+.ect-testimonial-content-section .section-content-wrapper {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.ect-testimonial-content-section .testimonial_slider_wrap {
+    width: 100%;
+}
+
+.ect-testimonial-content-section.layout-two .section-content-wrapper {
+    max-width: 1560px;
+}
+
+.ect-testimonial-content-section .post-thumbnail img {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.ect-testimonial-content-section .cycle-prev,
+.ect-testimonial-content-section .cycle-next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 199;
+}
+
+.ect-testimonial-content-section .cycle-prev:hover,
+.ect-testimonial-content-section .cycle-prev:focus,
+.ect-testimonial-content-section .cycle-next:hover,
+.ect-testimonial-content-section .cycle-next:focus {
+    background-color: transparent;
+}
+
+.ect-testimonial-content-section .icon {
+    top: -14px;
+    font-size: 32px;
+    font-size: 2rem;
+    width: 18px;
+}
+
+.ect-testimonial-content-section .cycle-prev .icon {
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+
+.ect-testimonial-content-section .cycle-next .icon {
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(270deg); /* IE 9 */
+    transform: rotate(270deg);
+}
+
+.ect-testimonial-content-section .entry-title,
+.ect-testimonial-content-section .entry-meta {
+    display: block;
+}
+
+.ect-testimonial-content-section .cycle-pager {
+    display: inline-block;
+    font-family: arial;
+    font-size: 54px;
+    line-height: 0;
+}
+
+.ect-testimonial-content-section .controller {
+    bottom: -21px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+}
+
+.ect-testimonial-content-section .cycle-pager span {
+    clear: both;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 7px;
+    width: 16px;
+}
+
+.ect-testimonial-content-section .cycle-pager > * {
+    cursor: pointer;
+}
+
+.ect-testimonial-content-section .entry-title {
+    margin: 21px 0 7px;
+    line-height: 1.647058823529412;
+}
+
+.ect-testimonial-content-section .more-link {
+    display: none;
+}
+
+.testimonial-slider-prev,
+.testimonial-slider-next,
+.testimonial-slider-prev:hover,
+.testimonial-slider-prev:focus,
+.testimonial-slider-next:hover,
+.testimonial-slider-next:focus {
+    color: #000;
+}
+
+.testimonial-slider-prev:hover,
+.testimonial-slider-prev:focus,
+.testimonial-slider-next:hover,
+.testimonial-slider-next:focus {
+    opacity: 0.5;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/**
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+/*--------------------------------------------------------------
+# >= 667px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 41.6875em) {
+   .ect-testimonial-content-section.layout-two .hentry {
+        width: 50%;
+    }
+
+   .ect-testimonial-content-section.layout-two .hentry:nth-child(2n+1) {
+        clear: both;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# >= 1024px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 64em) {
+   .ect-testimonial-content-section .hentry {
+        padding: 0 25px 56px;
+    }
+}

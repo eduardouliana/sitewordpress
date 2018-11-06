@@ -1,0 +1,33 @@
+{
+  "version": "1.0.100",
+  "content_type": "free",
+  "themes": [
+    "materialis"
+  ],
+  "theme_type": "multipage",
+  "data": {
+    "bgColorPalette": [
+      "#ffffff",
+      "#F5FAFD"
+    ], 
+    "fonts": {},
+    "headers": {},
+    "footers": {}
+  },
+  "customizer": {
+    "panels": {
+      "page_content_panel": {
+        "class": "Materialis\\Customizer\\Panels\\ContentPanel",
+        "disabled": false,
+        "wp_data": {
+          "title": "Page Content",
+          "priority": 2
+        }
+      }
+    },
+    "sections": {
+    },
+    "settings": {
+    }
+  }
+}

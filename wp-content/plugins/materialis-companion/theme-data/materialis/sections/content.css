@@ -1,0 +1,394 @@
+.about-1.content-section-spacing-large {
+	padding-bottom: 0;
+}
+
+.about-1 .button {
+	margin-bottom: .75rem;
+}
+
+.about-1 .rounded-topleft-topright {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin-bottom: 0;
+}
+
+.about-10,.about-9 {
+	overflow-x: hidden;
+}
+
+.about-10 .content-column,.about-9 .content-column {
+	position: relative;
+	z-index: 10;
+}
+
+.about-10 .border-radius-8,.about-9 .border-radius-8,.content-6 .border-radius-8,.content-7m .img-rounded {
+	border-radius: 8px;
+}
+
+.about-10 .max-image {
+	max-height: 720px;
+	max-width: 485px;
+	width: 100%;
+}
+
+.clients-2-materialis .card {
+	height: 100%;
+	padding: 24px 15px;
+	position: relative;
+}
+
+.clients-2-materialis .card .image-holder {
+	flex: 0 1 auto;
+	flex-direction: column;
+	flex-grow: 0;
+	height: 100%;
+}
+
+.contact-1 {
+	background-image: url("./images/mockup-863469.jpg");
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+}
+
+.contact-1:before {
+	background-color: rgba(26, 26, 26, .48);
+	content: ' ';
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.contact-1 .contact-form-wrapper:not(.inline-info)>.card {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.content-12m .bag-image,.content-13m .bag-image {
+	background-image: url("./images/image-4.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 560px;
+}
+
+.counters-1m .counter-box {
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.counters-1m .cols-separator-between div:after {
+	width: 2px;
+}
+
+.counters-1m .counter-box>.row {
+	align-items: center;
+	justify-content: center;
+}
+
+.counters-1m .content-left-sm .counter-box>.row {
+	justify-content: flex-start;
+}
+
+.counters-1m .content-center-sm .counter-box>.row,.testimonials-1m .f-align,.testimonials-3m .f-align {
+	justify-content: center;
+}
+
+.counters-1m .content-right-sm .counter-box>.row {
+	justify-content: flex-end;
+}
+
+.counters-1m .counter-box .col-sm-fit h2,.counters-1m .counter-box .col-sm-fit i.mdi.icon,.portfolio-2-materialis .card h6,.testimonials-1m .space-bottom-image {
+	margin-bottom: 0;
+}
+
+.counters-1m .counter-box h6 {
+	font-size: 1.11em;
+	width: 100%;
+}
+
+.counters-1m .counter-box i.mdi.icon {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.counters-2m .circle-counter {
+	border: 1px solid #CCCCCC;
+	border-radius: 100%;
+	margin: auto;
+	max-width: 60%;
+	padding: 4.5%;
+}
+
+.counters-2m .circle-counter * {
+	margin-bottom: 0;
+}
+
+.counters-2m .circle-content * {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+
+.counters-2m .content-left-sm .circle-counter {
+	margin-left: 0;
+}
+
+.counters-2m .content-right-sm .circle-counter {
+	margin-right: 0;
+}
+
+.cta-1-materialis {
+	background-image: url("./images/blogging-336376.jpg");
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.cta-1-materialis.content-section:before {
+	background-color: #000000;
+	opacity: .6;
+}
+
+.cta-1-materialis .card {
+	z-index: 50;
+}
+
+.features-10m .bordered {
+	border: 1px solid #e0e1e1;
+}
+
+.features-10m .padding-24 {
+	padding-bottom: 24px;
+	padding-top: 24px;
+}
+
+.features-10m .col-md-2 .padding-24 {
+	padding-bottom: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 24px;
+}
+
+.features-12 .col-md-2 .col-sm-fit,.features-12-card-bordered .col-md-2 .col-sm-fit,.latest-news-1-materialis .materialis-latest-news .post-list-item-thumb img,.overlappable-5-materialis .col-md-2 .col-sm-fit {
+	width: 100%;
+}
+
+.features-16 .read-more {
+	margin-top: 0;
+	padding-bottom: 0;
+}
+
+.features-16-card-bordered .card,.portfolio-2-materialis .card {
+	overflow: hidden;
+}
+
+.features-16-card-bordered .read-more-container {
+	border-top: 1px solid #eaeaea;
+	padding-bottom: 0;
+	padding-top: 1rem;
+}
+
+.features-16-card-bordered .col-padding-small {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.latest-news-1-materialis .materialis-latest-news .col-md-3 .mdc-card__actions,.latest-news-1-materialis .materialis-latest-news .col-md-2 .mdc-card__actions,.testimonials-4m .gridContainer>.spaced-cols>div>.card>* {
+	display: block;
+}
+
+.portfolio-2-materialis .card a.h5 {
+	color: #54617A;
+}
+
+.portfolio-2-materialis .col-padding {
+	padding: .5rem 2rem 1rem 2rem;
+}
+
+.team-1m .face,.team-8m .face {
+	display: block;
+	width: 100%;
+}
+
+.team-1m .social-icons-group {
+	margin-bottom: 8px;
+}
+
+.team-1m .description-container>*:last-child.social-icons-group {
+	margin-top: 32px;
+}
+
+.team-1m .social-icons-group i.mdi {
+	font-size: 1.3rem;
+	margin: 0 12px;
+}
+
+.team-8m .card {
+	padding: 0;
+}
+
+.team-8m .description-container {
+	padding: 1.4rem 0;
+}
+
+.team-8m .description-container .social-icons-group i.mdi {
+	font-size: 1.3rem;
+	margin: 0 20px 0 0;
+}
+
+.testimonials-1m .image-70 {
+	display: block;
+	margin-bottom: 0;
+	max-height: 70px;
+	max-width: 70px;
+}
+
+.testimonials-1m .testimonial-body>*,.testimonials-3m .testimonial-body>* {
+	display: block;
+	justify-self: flex-start;
+	margin-bottom: 7px;
+	margin-top: 8px;
+}
+
+.testimonials-1m .info>*:nth-child(-n+1) {
+	margin-bottom: 5px;
+}
+
+.testimonials-3m .image {
+	display: block;
+	margin-bottom: 0;
+	max-height: 70px;
+	max-width: 70px;
+}
+
+.testimonials-4m .image-90 {
+	max-height: 90px;
+	max-width: 90px;
+}
+
+.testimonials-4m .gridContainer>.spaced-cols>div>.card>p:first-child {
+	margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 768px){ 
+
+	.about-10,.about-9 {
+		overflow-x: visible;
+	}
+	
+	.counters-2m .circle-counter {
+		max-width: 80%;
+	}
+	
+	.counter-2m .col-sm-2 .circle-counter .circle-content h2,.counter-2m .col-md-2 .circle-counter .circle-content h2 {
+		font-size: 2.5rem;
+	}
+	
+	.counter-2m .col-sm-2 .circle-counter .circle-content p,.counter-2m .col-md-2 .circle-counter .circle-content p {
+		font-size: .77em;
+	}
+	
+	.features-12 .icon-column,.features-12-card-bordered .icon-column {
+		padding-right: 0;
+	}
+	
+	.testimonials-1m .content-left-sm .f-align,.testimonials-3m .content-left-sm .f-align {
+		justify-content: flex-start;
+	}
+	
+	.testimonials-1m .content-center-sm .f-align,.testimonials-3m .content-center-sm .f-align {
+		justify-content: center;
+	}
+	
+	.testimonials-1m .content-right-sm .f-align,.testimonials-3m .content-right-sm .f-align {
+		justify-content: flex-end;
+	}
+	
+	.testimonials-3m .image {
+		max-width: 70px;
+	}
+	
+ }
+@media screen and (max-width: 768px){ 
+
+	.about-4 .padding-top-bottom {
+		padding-bottom: 15px;
+		padding-top: 30px;
+	}
+	
+ }
+@media screen and (max-width: 767px){ 
+
+	.clients-2-materialis .card .flexbox>* {
+		display: block;
+		height: auto;
+		margin: auto;
+		width: 90%;
+	}
+	
+	.testimonials-4m .gridContainer>.spaced-cols>div>.card>img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+ }
+@media screen and (min-width: 768px){ 
+
+	.contact-1 .contact-form-wrapper.inline-info form[class*=wpcf7-] p:nth-of-type(4) {
+		margin-top: 0;
+	}
+	
+ }
+@media only screen and (min-width: 1024px){ 
+
+	.content-12m .full-col-left-padding {
+		padding-left: 14%;
+	}
+	
+	.content-13m .full-col-right-padding {
+		padding-right: 10%;
+	}
+	
+	.testimonials-3m .image {
+		max-width: 70px;
+	}
+	
+ }
+@media screen and (min-width: 1024px){ 
+
+	.latest-news-1-materialis .materialis-latest-news .mdc-card__actions .mdc-card__action-icons {
+		justify-content: left;
+	}
+	
+ }
+@media screen and (min-width: 767px){ 
+
+	.overlappable-4 . {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+	
+ }
+@media (min-width: 768px){ 
+
+	.overlappable-5-materialis .icon-col {
+		padding-right: 0;
+	}
+	
+ }
+@media screen and (min-width: 768px) and (max-width: 1023px){ 
+
+	.testimonials-1m .no-padding-left {
+		padding-left: 15px;
+	}
+	
+	.testimonials-1m .space-bottom-image {
+		margin-bottom: 1rem;
+	}
+	
+ }

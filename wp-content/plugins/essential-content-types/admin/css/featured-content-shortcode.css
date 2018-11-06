@@ -1,0 +1,351 @@
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Element
+--------------------------------------------------------------*/
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+ 
+
+/*--------------------------------------------------------------
+# Padding/Margin
+--------------------------------------------------------------*/
+
+.section-heading-wrapper {
+	padding: 42px 30px;
+}
+
+.section-title-wrapper {
+	margin: 0;
+}
+
+.featured-content-wrapper .page-title,
+.featured-content-wrapper .entry-title,
+.featured-content-wrapper .entry-meta,
+.featured-content-wrapper .entry-summary,
+.featured-content-wrapper .entry-content,
+.portfolio-content-wrapper .page-title,
+.portfolio-content-wrapper .entry-title,
+.portfolio-content-wrapper .entry-meta,
+.portfolio-content-wrapper .entry-summary,
+.portfolio-content-wrapper .entry-content,
+.service-content-wrapper .page-title,
+.service-content-wrapper .entry-title,
+.service-content-wrapper .entry-meta,
+.service-content-wrapper .entry-summary,
+.service-content-wrapper .entry-content {
+	margin: 21px 0;
+}
+
+.featured-content-wrapper .hentry,
+.portfolio-content-wrapper .hentry,
+.service-content-wrapper .hentry {
+	margin-bottom: 30px;
+}
+
+.featured-content-wrapper,
+.portfolio-content-wrapper,
+.service-content-wrapper {
+	padding: 0 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.featured-content-wrapper:before,
+.featured-content-wrapper:after,
+.portfolio-content-wrapper:before,
+.portfolio-content-wrapper:after,
+.service-content-wrapper:before,
+.service-content-wrapper:after,
+.entry-content:before,
+.entry-content:after,
+.entry-summary:before,
+.entry-summary:after {
+	content: "";
+	display: table;
+}
+
+.featured-content-wrapper:before,
+.featured-content-wrapper:after,
+.portfolio-content-wrapper:before,
+.portfolio-content-wrapper:after,
+.service-content-wrapper:before,
+.service-content-wrapper:after,
+.entry-content:after,
+.entry-summary:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Posts and pages
+--------------------------------------------------------------*/
+
+.featured-content-wrapper .hentry,
+.portfolio-content-wrapper .hentry,
+.service-content-wrapper .hentry {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.post-thumbnail img {
+	display: block;
+	margin: 0 auto;
+}
+
+.service-content-wrapper .post-thumbnail img {
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+
+.section {
+	clear: both;
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.section-heading-wrapper {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Featured Content & Portfolio
+--------------------------------------------------------------*/
+
+.featured-content-wrapper .post-thumbnail,
+.portfolio-content-wrapper .post-thumbnail {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/**
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+/*--------------------------------------------------------------
+# >= 667px
+--------------------------------------------------------------*/    
+
+@media screen and (min-width: 41.6875em) {
+	.featured-content-wrapper.layout-four,
+	.portfolio-content-wrapper.layout-four,
+	.service-content-wrapper.layout-four,
+	.featured-content-wrapper.layout-two,
+	.portfolio-content-wrapper.layout-two,
+	.service-content-wrapper.layout-two {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.featured-content-wrapper.layout-four .hentry,
+	.portfolio-content-wrapper.layout-four .hentry,
+	.service-content-wrapper.layout-four .hentry,
+	.featured-content-wrapper.layout-two .hentry,
+	.portfolio-content-wrapper.layout-two .hentry,
+	.service-content-wrapper.layout-two .hentry {
+		width: 50%;
+	}
+
+	.featured-content-wrapper.layout-four .hentry,
+	.portfolio-content-wrapper.layout-four .hentry,
+	.service-content-wrapper.layout-four .hentry,
+	.featured-content-wrapper.layout-two .hentry,
+	.portfolio-content-wrapper.layout-two .hentry,
+	.service-content-wrapper.layout-two .hentry {
+		padding: 0 15px;
+	}
+
+	.featured-content-wrapper.layout-two .hentry:nth-child(2n+1),
+	.featured-content-wrapper.layout-four .hentry:nth-child(2n+1),
+	.portfolio-content-wrapper.layout-two .hentry:nth-child(2n+1),
+	.portfolio-content-wrapper.layout-four .hentry:nth-child(2n+1),
+	.service-content-wrapper.layout-two .hentry:nth-child(2n+1),
+	.service-content-wrapper.layout-four .hentry:nth-child(2n+1) {
+		clear: both;
+	}
+
+	#testimonial-content-section.layout-two .hentry {
+		width: 50%;
+	}
+
+	#testimonial-content-section.layout-two .hentry:nth-child(2n+1) {
+		clear: both;
+	}
+
+	.featured-content-wrapper.layout-six,
+	.portfolio-content-wrapper.layout-six,
+	.service-content-wrapper.layout-six,
+	.featured-content-wrapper.layout-three,
+	.portfolio-content-wrapper.layout-three,
+	.service-content-wrapper.layout-three {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.featured-content-wrapper.layout-six .hentry,
+	.portfolio-content-wrapper.layout-six .hentry,
+	.service-content-wrapper.layout-six .hentry,
+	.featured-content-wrapper.layout-three .hentry,
+	.portfolio-content-wrapper.layout-three .hentry,
+	.service-content-wrapper.layout-three .hentry {
+		width: 33.33%;
+	}
+
+	.featured-content-wrapper.layout-six .hentry,
+	.portfolio-content-wrapper.layout-six .hentry,
+	.service-content-wrapper.layout-six .hentry,
+	.featured-content-wrapper.layout-three .hentry,
+	.portfolio-content-wrapper.layout-three .hentry,
+	.service-content-wrapper.layout-three .hentry {
+		padding: 0 15px;
+	}
+
+	.featured-content-wrapper.layout-three .hentry-inner .post-thumbnail,
+	.portfolio-content-wrapper.layout-three .hentry-inner .post-thumbnail,
+	.service-content-wrapper.layout-three .hentry-inner .post-thumbnail,
+	.featured-content-wrapper.layout-three .hentry-inner .entry-container,
+	.portfolio-content-wrapper.layout-three .hentry-inner .entry-container,
+	.service-content-wrapper.layout-three .hentry-inner .entry-container {
+		display: block;
+	    width: 100%;
+	}
+
+	.featured-content-wrapper.layout-six .hentry:nth-child(3n+1),
+	.portfolio-content-wrapper.layout-six .hentry:nth-child(3n+1),
+	.service-content-wrapper.layout-six .hentry:nth-child(3n+1),
+	.featured-content-wrapper.layout-three .hentry:nth-child(3n+1),
+	.portfolio-content-wrapper.layout-three .hentry:nth-child(3n+1),
+	.service-content-wrapper.layout-three .hentry:nth-child(3n+1) {
+		clear: both;
+	}	
+}
+
+
+/*--------------------------------------------------------------
+# >= 1024px
+--------------------------------------------------------------*/   
+
+@media screen and (min-width: 64em) {
+	.featured-content-wrapper, 
+	.portfolio-content-wrapper, 
+	.service-content-wrapper {
+		padding: 0 25px;
+	}
+
+	.featured-content-wrapper.layout-four .hentry,
+	.portfolio-content-wrapper.layout-four .hentry,
+	.service-content-wrapper.layout-four .hentry,
+	.featured-content-wrapper.layout-three .hentry,
+	.portfolio-content-wrapper.layout-three .hentry,
+	.service-content-wrapper.layout-three .hentry,
+	.featured-content-wrapper.layout-two .hentry,
+	.portfolio-content-wrapper.layout-two .hentry,
+	.service-content-wrapper.layout-two .hentry {
+		padding: 0 25px;
+	}
+
+	.featured-content-wrapper.layout-six,
+	.portfolio-content-wrapper.layout-six,
+	.service-content-wrapper.layout-six,
+	.featured-content-wrapper.layout-four,
+	.portfolio-content-wrapper.layout-four,
+	.service-content-wrapper.layout-four,
+	.featured-content-wrapper.layout-three,
+	.portfolio-content-wrapper.layout-three,
+	.service-content-wrapper.layout-three
+	.featured-content-wrapper.layout-two,
+	.portfolio-content-wrapper.layout-two,
+	.service-content-wrapper.layout-two {
+		margin-left: 0;
+	    margin-right: 0;
+	}
+
+	.featured-content-wrapper.layout-four .hentry:nth-child(2n+1),
+	.portfolio-content-wrapper.layout-four .hentry:nth-child(2n+1),
+	.service-content-wrapper.layout-four .hentry:nth-child(2n+1) {
+		clear: none;
+	}
+
+	.featured-content-wrapper.layout-four .hentry:nth-child(4n+1),
+	.portfolio-content-wrapper.layout-four .hentry:nth-child(4n+1),
+	.service-content-wrapper.layout-four .hentry:nth-child(4n+1) {
+		clear: both;
+	}
+
+	.featured-content-wrapper.layout-six .hentry:nth-child(3n+1),
+	.portfolio-content-wrapper.layout-six .hentry:nth-child(3n+1),
+	.service-content-wrapper.layout-six .hentry:nth-child(3n+1) {
+		clear: none;	
+	}
+
+	.featured-content-wrapper.layout-five .hentry:nth-child(5n+1),
+    .portfolio-content-wrapper.layout-five .hentry:nth-child(5n+1),
+    .service-content-wrapper.layout-five .hentry:nth-child(5n+1) {
+        clear: both;    
+    }
+
+	.featured-content-wrapper.layout-six .hentry:nth-child(6n+1),
+	.portfolio-content-wrapper.layout-six .hentry:nth-child(6n+1),
+	.service-content-wrapper.layout-six .hentry:nth-child(6n+1) {
+		clear: both;	
+	}
+
+	.featured-content-wrapper.layout-four .hentry,
+	.portfolio-content-wrapper.layout-four .hentry,
+	.service-content-wrapper.layout-four .hentry {
+		width: 25%;
+		padding: 0 15px;
+	}
+
+	.featured-content-wrapper.layout-five .hentry,
+	.portfolio-content-wrapper.layout-five .hentry,
+	.service-content-wrapper.layout-five .hentry {
+		width: 20%;
+		padding: 0 15px;
+	}
+
+	.featured-content-wrapper.layout-six .hentry,
+	.portfolio-content-wrapper.layout-six .hentry,
+	.service-content-wrapper.layout-six .hentry {
+		width: 16.66666666666667%;
+		padding: 0 15px;
+	}
+
+	#testimonial-content-section .hentry {
+		padding: 0 25px 56px;
+	}
+}

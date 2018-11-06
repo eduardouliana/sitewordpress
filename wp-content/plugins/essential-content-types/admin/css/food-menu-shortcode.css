@@ -1,0 +1,156 @@
+/*--------------------------------------------------------------
+# Food Menu
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Element
+--------------------------------------------------------------*/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.menu-content-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.menu-content-wrapper .ui-nav-collapse {
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+
+.menu-content-wrapper .ui-nav-collapse,
+.menu-content-wrapper .ui-tabs-anchor {
+    display: block;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.menu-content-wrapper .tabs-nav,
+.menu-content-wrapper .ui-tabs-panel {
+    display: none;
+}
+
+.menu-content-wrapper .ui-tabs-panel.active-tab {
+    display: block;
+}
+
+.menu-content-wrapper .hentry {
+    margin-bottom: 21px;
+}
+
+.menu-content-wrapper .hentry-inner {
+    border-bottom: 3px solid #eee;
+    padding-bottom: 21px;
+}
+
+.menu-content-wrapper .entry-container {
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.menu-content-wrapper .entry-description, .entry-price {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.menu-content-wrapper .entry-description {
+    width: 70%;
+}
+
+.entry-price {
+    padding-top: 4px;
+    width: 30%;
+    text-align: right;
+}
+
+.menu-group-header {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# >= 667px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 41.6875em) {
+
+    /*menu-content-wrapper*/
+    .menu-content-wrapper .tabs-nav {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .menu-content-wrapper .ui-tabs-nav {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu-content-wrapper .ui-tabs-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .menu-content-wrapper .ui-tabs-anchor {
+        display: inline-block;
+        padding: 14px 25px;
+    }
+
+    .menu-content-wrapper .ui-nav-collapse {
+        display: none;
+    }
+
+    .menu-content-wrapper .hentry-inner {
+        padding-bottom: 28px;
+    }
+
+    .entry-price {
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+}
+
+.menu-content-wrapper a {
+    text-decoration: none;
+}
+
+.menu-content-wrapper .entry-title,
+.menu-content-wrapper .entry-header {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.menu-content-wrapper .entry-title {
+    margin-bottom: 7px;
+}
+
+ body.ect-post .content-area .singular-content-wrap .menu-content-wrapper .entry-content {
+    padding-top: 0;
+    margin-top: 21px;
+} 
+
+.ect-post .menu-content-wrapper .more-button {
+    text-align: left;
+}
+
+.ect-post .singular-content-wrap .entry-content .entry-header,
+.ect-post .entry-content,
+.ect-post .ect-menu .menu-content-wrapper .entry-header {
+    text-align: left;
+} 
