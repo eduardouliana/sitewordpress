@@ -26,7 +26,7 @@ define('DB_NAME', 'unoesc');
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'rootroot');
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');
